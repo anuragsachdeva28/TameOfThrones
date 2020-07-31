@@ -27,7 +27,7 @@ So if King Shan, sends the message "rozo" to Air, King Shan will receive
 the allegiance from Air. As "rozo" will decrypt to "olwl" and these letters
 contain the emblem characters ‘o’, ’w’, ’l’.
 
-### **Sample input & output **
+### **Sample input & output**
 <B>Sample Input</B><br>
 AIR ROZO <br>
 LAND FAIJWJSOOFAMAU<br>
@@ -38,5 +38,18 @@ SPACE AIR LAND ICE
 
 ### **How to run the project**
 
+```
+git clone https://github.com/anuragsachdeva28/TameOfThrones.git
+
+cd TameOfThrones
+
+./gradlew clean build
+```
+
+After this go inside build/libs folder and run the following command:
+<br>
+```
+java -jar geektrust.jar <path to input file>
+```
 ### **Authors**
 Anurag Sachdeva
