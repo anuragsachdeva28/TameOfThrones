@@ -51,5 +51,10 @@ After this go inside build/libs folder and run the following command:
 ```
 java -jar geektrust.jar <path to input file>
 ```
+
+To run test:
+```
+./gradlew test
+```
 ### **Authors**
 Anurag Sachdeva

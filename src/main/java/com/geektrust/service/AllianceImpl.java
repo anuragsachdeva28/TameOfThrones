@@ -9,7 +9,7 @@ import java.util.Map;
 public class AllianceImpl implements Alliance {
 
     KingdomData kingdomData = new KingdomData();
-
+    Util util = new Util();
     Map<String, Kingdom> kingdomMap = kingdomData.getAllKingdoms();
 
     @Override
@@ -17,8 +17,8 @@ public class AllianceImpl implements Alliance {
         Kingdom kingdom = kingdomMap.get(kingdomName);
         String emblem = kingdom.getEmblem();
         int cipherKey = kingdom.getCipherKey();
-        String encryptedEmblem = Util.encryptEmblem(emblem, cipherKey);
+        String encryptedEmblem = util.encryptEmblem(emblem, cipherKey);
 
-        return Util.validateMessage(encryptedEmblem, secretMessage);
+        return util.validateMessage(encryptedEmblem, secretMessage);
     }
 }

@@ -1,16 +1,24 @@
 package com.geektrust.data;
 
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
 import java.util.ArrayList;
 import java.util.List;
 
-
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
 public class AlliedKingdom {
 
     private List<String> alliedKingdom = new ArrayList<>();
 
     public void addKingdom(String kingdomName) {
-        alliedKingdom.add(kingdomName);
+        if (kingdomName != null) {
+            alliedKingdom.add(kingdomName);
+        }
     }
 
     public void displayAllies() {

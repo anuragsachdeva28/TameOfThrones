@@ -1,9 +1,9 @@
 package com.geektrust.Util;
 
 public class Util {
-    static final int BASE_CHAR_ASCII_INDEX = 65;
-    static final int TOTAL_ALPHABETS = 26;
-    public static String encryptEmblem(String emblem, int cipherKey) {
+    final int BASE_CHAR_ASCII_INDEX = 65;
+    final int TOTAL_ALPHABETS = 26;
+    public String encryptEmblem(String emblem, int cipherKey) {
         String encryptedEmblem = "";
         for (char c : emblem.toCharArray()) {
             int index = (int)c - BASE_CHAR_ASCII_INDEX;
@@ -13,7 +13,7 @@ public class Util {
         return encryptedEmblem;
     }
 
-    public static boolean validateMessage(String encryptedEmblem, String secretMessage) {
+    public boolean validateMessage(String encryptedEmblem, String secretMessage) {
 
         for (char c : encryptedEmblem.toCharArray()) {
             if (secretMessage.indexOf(c) == -1) {

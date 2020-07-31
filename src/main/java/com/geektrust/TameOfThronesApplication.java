@@ -18,6 +18,7 @@ public class TameOfThronesApplication {
         Alliance alliance = new AllianceImpl();
         AlliedKingdom alliedKingdom = new AlliedKingdom();
 
+
         File file = new File(args[0]);
 
         Scanner scanner = new Scanner(file);
