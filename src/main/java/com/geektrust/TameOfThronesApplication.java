@@ -8,16 +8,18 @@ import com.geektrust.service.AllianceImpl;
 
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.util.Map;
 import java.util.Scanner;
 
 public class TameOfThronesApplication {
-    public static void main(String[] args) throws FileNotFoundException {
+    public static void main(String[] args) throws IOException {
 
         Alliance alliance = new AllianceImpl();
         AlliedKingdom alliedKingdom = new AlliedKingdom();
 
         File file = new File(args[0]);
+
         Scanner scanner = new Scanner(file);
 
         while (scanner.hasNextLine()) {
@@ -31,6 +33,5 @@ public class TameOfThronesApplication {
         }
 
         alliedKingdom.displayAllies();
-
     }
 }

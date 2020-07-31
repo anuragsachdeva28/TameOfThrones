@@ -1,12 +1,13 @@
 package com.geektrust.data;
 
 
+import java.util.ArrayList;
 import java.util.List;
 
 
 public class AlliedKingdom {
 
-    private List<String> alliedKingdom;
+    private List<String> alliedKingdom = new ArrayList<>();
 
     public void addKingdom(String kingdomName) {
         alliedKingdom.add(kingdomName);
