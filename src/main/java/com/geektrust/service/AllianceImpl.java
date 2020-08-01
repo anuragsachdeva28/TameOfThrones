@@ -8,8 +8,9 @@ import java.util.Map;
 
 public class AllianceImpl implements Alliance {
 
-    KingdomData kingdomData = new KingdomData();
     Util util = new Util();
+
+    KingdomData kingdomData = new KingdomData();
     Map<String, Kingdom> kingdomMap = kingdomData.getAllKingdoms();
 
     @Override
