@@ -3,7 +3,6 @@ package com.geektrust.service;
 import com.geektrust.crypt.Decryptor;
 import com.geektrust.data.Kingdom;
 import com.geektrust.data.KingdomFactory;
-import com.geektrust.util.StringUtil;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
@@ -11,7 +10,7 @@ import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.mockito.junit.jupiter.MockitoExtension;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 @ExtendWith(MockitoExtension.class)
 class DefaultKingdomManagerTest {
@@ -33,7 +32,7 @@ class DefaultKingdomManagerTest {
         Mockito.lenient().when(kingdomFactory.getKingdom("LAND")).thenReturn(new Kingdom("LAND", "PANDA"));
         Mockito.lenient().when(kingdom.getEmblem()).thenReturn("PANDA");
         Mockito.lenient().when(kingdom.getCipherKey()).thenReturn("5");
-        Mockito.when(decryptor.decrypt("5","FAIJWJSOOFAMAU")).thenReturn("AVDERENJJAVHVP");
+        Mockito.when(decryptor.decrypt("5", "FAIJWJSOOFAMAU")).thenReturn("AVDERENJJAVHVP");
         assertTrue(defaultKingdomManager.checkAlliance("LAND", "FAIJWJSOOFAMAU"));
     }
 }

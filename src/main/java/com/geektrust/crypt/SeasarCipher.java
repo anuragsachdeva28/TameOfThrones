@@ -1,13 +1,18 @@
 package com.geektrust.crypt;
 
+/**
+ * Assumption: The SeasarCipher takes 'spaces' differently into consideration while
+ * performing encryption and decryption
+ */
 public class SeasarCipher implements Decryptor, Encryptor {
 
     private final int BASE_CHAR_ASCII_INDEX = 65;
     private final int TOTAL_ALPHABETS = 26;
     private final int SPACE_ASCII_INDEX = 32;
+
     /**
-     * Assumption: The SeasarCipher takes 'spaces' differently into consideration while
-     * performing encryption and decryption
+     * decrypt method returns the decrypted version of the message using SeasarCipher
+     * decryption technique
      *
      * @param cipherKey
      * @param message
@@ -16,13 +21,13 @@ public class SeasarCipher implements Decryptor, Encryptor {
     @Override
     public String decrypt(String cipherKey, String message) {
         StringBuilder decryptedMessage = new StringBuilder();
-        for(char c : message.toCharArray()) {
-            if ((int)c == SPACE_ASCII_INDEX) {
+        for (char c : message.toCharArray()) {
+            if ((int) c == SPACE_ASCII_INDEX) {
                 decryptedMessage.append(c);
                 continue;
             }
-            int index = (int)c - BASE_CHAR_ASCII_INDEX;
-            int newIndex =  (index - (Integer.parseInt(cipherKey) % TOTAL_ALPHABETS));
+            int index = (int) c - BASE_CHAR_ASCII_INDEX;
+            int newIndex = (index - (Integer.parseInt(cipherKey) % TOTAL_ALPHABETS));
             if (newIndex < 0) {
                 newIndex = TOTAL_ALPHABETS + newIndex;
             }
@@ -32,16 +37,24 @@ public class SeasarCipher implements Decryptor, Encryptor {
         return decryptedMessage.toString();
     }
 
+    /**
+     * encrypt method returns the encrypted version of the message using SeasarCipher
+     * encryption technique
+     *
+     * @param cipherKey
+     * @param message
+     * @return
+     */
     @Override
     public String encrypt(String cipherKey, String message) {
         StringBuilder encryptedMessage = new StringBuilder();
         for (char c : message.toCharArray()) {
-            if ((int)c == SPACE_ASCII_INDEX) {
+            if ((int) c == SPACE_ASCII_INDEX) {
                 encryptedMessage.append(c);
                 continue;
             }
-            int index = (int)c - BASE_CHAR_ASCII_INDEX;
-            int newIndex =  (index + Integer.parseInt(cipherKey)) % TOTAL_ALPHABETS;
+            int index = (int) c - BASE_CHAR_ASCII_INDEX;
+            int newIndex = (index + Integer.parseInt(cipherKey)) % TOTAL_ALPHABETS;
             encryptedMessage.append((char) (newIndex + BASE_CHAR_ASCII_INDEX));
         }
         return encryptedMessage.toString();

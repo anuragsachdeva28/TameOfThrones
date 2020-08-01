@@ -16,12 +16,19 @@ public class DefaultKingdomManager implements KingdomManager {
         this.decryptor = new SeasarCipher();
     }
 
-
+    /**
+     * checkAlliance method checks whether a particular kingdom will give alliance if
+     * a particular secretMessage is send to him
+     *
+     * @param kingdomName
+     * @param secretMessage
+     * @return
+     */
+    @Override
     public boolean checkAlliance(String kingdomName, String secretMessage) {
         String cipherKey = kingdomFactory.getKingdom(kingdomName).getCipherKey();
         String emblem = kingdomFactory.getKingdom(kingdomName).getEmblem();
         String decryptedMsg = decryptor.decrypt(cipherKey, secretMessage);
-        boolean res = StringUtil.isSubSequence(emblem, decryptedMsg);
-        return res;
+        return StringUtil.isSubSequence(emblem, decryptedMsg);
     }
 }

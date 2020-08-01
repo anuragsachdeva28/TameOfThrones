@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5bad17d4-e941-4dea-8597-ad3427680566" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/geektrust/util/StringUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
@@ -14,12 +13,10 @@
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/geektrust/TameOfThronesApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/geektrust/TameOfThronesApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/geektrust/data/AlliedKingdom.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/geektrust/data/AlliedKingdom.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/geektrust/data/Kingdom.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/geektrust/data/Kingdom.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/geektrust/data/KingdomData.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/geektrust/service/AllianceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/geektrust/service/AllianceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/com/geektrust/service/AllianceImplTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/com/geektrust/service/AllianceImplTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/geektrust.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/geektrust.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/com/geektrust/data/AlliedKingdomTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/com/geektrust/data/AlliedKingdomTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/com.geektrust.TameOfThronesApplicationTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/com.geektrust.TameOfThronesApplicationTest.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/com.geektrust.data.AlliedKingdomTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/com.geektrust.data.AlliedKingdomTest.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/com.geektrust.service.AllianceImplTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/com.geektrust.service.AllianceImplTest.html" afterDir="false" />
@@ -31,13 +28,15 @@
       <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-com.geektrust.data.AlliedKingdomTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-com.geektrust.data.AlliedKingdomTest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-com.geektrust.service.AllianceImplTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-com.geektrust.service.AllianceImplTest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/geektrust/TameOfThronesApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/geektrust/TameOfThronesApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/geektrust/crypt/SeasarCipher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/geektrust/crypt/SeasarCipher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/geektrust/data/AlliedKingdom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/geektrust/data/AlliedKingdom.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/geektrust/data/Kingdom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/geektrust/data/Kingdom.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/geektrust/data/KingdomData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/geektrust/data/KingdomFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/geektrust/data/KingdomFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/geektrust/data/KingdomFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/geektrust/service/Alliance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/geektrust/service/Alliance.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/geektrust/service/AllianceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/geektrust/service/AllianceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/geektrust/util/Util.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/geektrust/service/AllianceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/geektrust/service/AllianceImplTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/geektrust/util/UtilTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/geektrust/service/DefaultKingdomManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/geektrust/service/DefaultKingdomManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/geektrust/util/StringUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/geektrust/util/StringUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/geektrust/data/AlliedKingdomTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/geektrust/data/AlliedKingdomTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -46,7 +45,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageViewManager">
-    <option name="myElementSize" value="181" />
+    <option name="myElementSize" value="180" />
   </component>
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
@@ -94,10 +93,10 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.geektrust.data" />
       <recent name="com.geektrust.service" />
       <recent name="com.geektrust.util" />
       <recent name="com.geektrust.crypt" />
-      <recent name="com.geektrust.data" />
       <recent name="com.geektrust.Util" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
@@ -117,6 +116,46 @@
     </option>
   </component>
   <component name="RunManager" selected="Gradle.Tests in 'geektrust.test'">
+    <configuration name="AlliedKingdomTest.displayAlliesWhenAlliesAreLessThanThree" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;com.geektrust.data.AlliedKingdomTest.displayAlliesWhenAlliesAreLessThanThree&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="AlliedKingdomTest.displayAlliesWhenAlliesAreMoreThanThree" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;com.geektrust.data.AlliedKingdomTest.displayAlliesWhenAlliesAreMoreThanThree&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
     <configuration name="DefaultKingdomManagerTest.checkAlliance" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -137,52 +176,12 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="SeasarCipherTest.testSeasarCipher" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;com.geektrust.crypt.SeasarCipherTest.testSeasarCipher&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":cleanTest" />
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
-      <method v="2" />
-    </configuration>
     <configuration name="TameOfThronesApplicationTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
         <option name="scriptParameters" value="--tests &quot;com.geektrust.TameOfThronesApplicationTest&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":cleanTest" />
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="TameOfThronesApplicationTest.testForAlliedRulers" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;com.geektrust.TameOfThronesApplicationTest.testForAlliedRulers&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -220,10 +219,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.Tests in 'geektrust.test'" />
+        <item itemvalue="Gradle.AlliedKingdomTest.displayAlliesWhenAlliesAreLessThanThree" />
+        <item itemvalue="Gradle.AlliedKingdomTest.displayAlliesWhenAlliesAreMoreThanThree" />
         <item itemvalue="Gradle.TameOfThronesApplicationTest" />
         <item itemvalue="Gradle.DefaultKingdomManagerTest.checkAlliance" />
-        <item itemvalue="Gradle.TameOfThronesApplicationTest.testForAlliedRulers" />
-        <item itemvalue="Gradle.SeasarCipherTest.testSeasarCipher" />
       </list>
     </recent_temporary>
   </component>
@@ -238,7 +237,7 @@
       <option name="presentableId" value="Default" />
       <updated>1596129289441</updated>
       <workItem from="1596129294404" duration="17537000" />
-      <workItem from="1596186277523" duration="34938000" />
+      <workItem from="1596186277523" duration="38569000" />
     </task>
     <servers />
   </component>
@@ -262,100 +261,15 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/geektrust/crypt/SeasarCipher.java</url>
-          <line>46</line>
-          <option name="timeStamp" value="19" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/geektrust/TameOfThronesApplication.java</url>
-          <line>22</line>
-          <option name="timeStamp" value="36" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/geektrust/TameOfThronesApplication.java</url>
-          <line>23</line>
-          <option name="timeStamp" value="37" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/geektrust/TameOfThronesApplication.java</url>
-          <line>24</line>
-          <option name="timeStamp" value="38" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/geektrust/TameOfThronesApplication.java</url>
-          <line>26</line>
-          <option name="timeStamp" value="39" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/geektrust/TameOfThronesApplication.java</url>
-          <line>27</line>
-          <option name="timeStamp" value="40" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/geektrust/TameOfThronesApplication.java</url>
-          <line>31</line>
-          <option name="timeStamp" value="41" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/geektrust/service/AllianceImpl.java</url>
-          <line>16</line>
-          <option name="timeStamp" value="42" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/geektrust/service/DefaultKingdomManager.java</url>
-          <line>20</line>
-          <option name="timeStamp" value="43" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/geektrust/service/DefaultKingdomManager.java</url>
-          <line>21</line>
-          <option name="timeStamp" value="44" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/geektrust/service/DefaultKingdomManager.java</url>
-          <line>22</line>
-          <option name="timeStamp" value="45" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/geektrust/service/DefaultKingdomManager.java</url>
           <line>23</line>
-          <option name="timeStamp" value="46" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/geektrust/service/DefaultKingdomManager.java</url>
-          <line>24</line>
-          <option name="timeStamp" value="47" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/geektrust/util/StringUtil.java</url>
-          <line>15</line>
-          <option name="timeStamp" value="48" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/geektrust/util/StringUtil.java</url>
-          <line>14</line>
-          <option name="timeStamp" value="49" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/geektrust/util/StringUtil.java</url>
-          <line>17</line>
-          <option name="timeStamp" value="50" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/geektrust/util/StringUtil.java</url>
-          <line>18</line>
-          <option name="timeStamp" value="52" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/geektrust/util/StringUtil.java</url>
-          <line>21</line>
-          <option name="timeStamp" value="53" />
+          <option name="timeStamp" value="42" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/geektrust$TameOfThronesApplicationTest.ic" NAME="TameOfThronesApplicationTest Coverage Results" MODIFIED="1596308173535" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-    <SUITE FILE_PATH="coverage/geektrust$Tests_in__geektrust_test_.ic" NAME="Tests in 'geektrust.test' Coverage Results" MODIFIED="1596308467900" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/geektrust$Tests_in__geektrust_test_.ic" NAME="Tests in 'geektrust.test' Coverage Results" MODIFIED="1596313031905" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

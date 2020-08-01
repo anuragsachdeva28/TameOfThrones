@@ -22,9 +22,9 @@ public class TameOfThronesApplication {
         while (scanner.hasNextLine()) {
             String input = scanner.nextLine();
             String kingdomName = input.substring(0, input.indexOf(" "));
-            String secretMessage = input.substring(input.indexOf(" ")+1);
+            String secretMessage = input.substring(input.indexOf(" ") + 1);
 
-            if(alliance.checkAlliance(kingdomName, secretMessage)) {
+            if (alliance.checkAlliance(kingdomName, secretMessage)) {
                 alliedKingdom.addKingdom(kingdomName);
             }
         }

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.geektrust.TameOfThronesApplicationTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2020-08-01T19:02:02" hostname="anurag-PC" time="0.008">
+<testsuite name="com.geektrust.TameOfThronesApplicationTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2020-08-01T20:17:14" hostname="anurag-PC" time="0.011">
   <properties/>
-  <testcase name="testForNoAlliedRuler()" classname="com.geektrust.TameOfThronesApplicationTest" time="0.006"/>
+  <testcase name="testForNoAlliedRuler()" classname="com.geektrust.TameOfThronesApplicationTest" time="0.009"/>
   <testcase name="testForAlliedRulers()" classname="com.geektrust.TameOfThronesApplicationTest" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>

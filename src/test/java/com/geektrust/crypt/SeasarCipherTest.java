@@ -2,7 +2,7 @@ package com.geektrust.crypt;
 
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class SeasarCipherTest {
 
@@ -11,16 +11,16 @@ class SeasarCipherTest {
         SeasarCipher cipher = new SeasarCipher();
 
         //testing for normal cases
-        assertEquals("LAND", cipher.decrypt("3", cipher.encrypt("3","LAND")));
+        assertEquals("LAND", cipher.decrypt("3", cipher.encrypt("3", "LAND")));
 
         //checking for null string values
-        assertEquals("", cipher.decrypt("3", cipher.encrypt("3","")));
+        assertEquals("", cipher.decrypt("3", cipher.encrypt("3", "")));
 
         //testing for strings with multiple word
-        assertEquals("SUMMER IS COMING", cipher.decrypt("0", cipher.encrypt("0","SUMMER IS COMING")));
+        assertEquals("SUMMER IS COMING", cipher.decrypt("0", cipher.encrypt("0", "SUMMER IS COMING")));
 
         //testing for very large values of cipherKey
-        assertEquals("LAND", cipher.decrypt("1500", cipher.encrypt("1500","LAND")));
+        assertEquals("LAND", cipher.decrypt("1500", cipher.encrypt("1500", "LAND")));
 
 //        System.out.println(cipher.decrypt("5","FAIJWJSOOFAMAU"));
     }

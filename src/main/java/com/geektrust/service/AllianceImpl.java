@@ -11,6 +11,14 @@ public class AllianceImpl implements Alliance {
 
     }
 
+    /**
+     * checkAlliance method checks whether a particular kingdom will give alliance if
+     * a particular secretMessage is send to him
+     *
+     * @param kingdomName
+     * @param secretMessage
+     * @return
+     */
     @Override
     public boolean checkAlliance(String kingdomName, String secretMessage) {
 
