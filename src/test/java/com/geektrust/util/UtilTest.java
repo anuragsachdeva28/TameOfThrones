@@ -1,4 +1,4 @@
-package com.geektrust.Util;
+package com.geektrust.util;
 
 import org.junit.jupiter.api.Test;
 

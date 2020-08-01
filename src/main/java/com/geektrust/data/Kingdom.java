@@ -1,5 +1,8 @@
 package com.geektrust.data;
 
+import lombok.EqualsAndHashCode;
+
+@EqualsAndHashCode
 public class Kingdom {
     private String name;
     private String emblem;

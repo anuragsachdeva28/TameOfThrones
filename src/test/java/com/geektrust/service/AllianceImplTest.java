@@ -1,6 +1,6 @@
 package com.geektrust.service;
 
-import com.geektrust.Util.Util;
+import com.geektrust.util.Util;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;

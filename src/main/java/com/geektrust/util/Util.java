@@ -1,4 +1,4 @@
-package com.geektrust.Util;
+package com.geektrust.util;
 
 public class Util {
     final int BASE_CHAR_ASCII_INDEX = 65;

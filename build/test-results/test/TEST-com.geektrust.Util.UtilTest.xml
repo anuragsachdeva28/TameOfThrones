@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.geektrust.Util.UtilTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2020-07-31T21:30:47" hostname="anurag-PC" time="0.002">
-  <properties/>
-  <testcase name="encryptEmblem()" classname="com.geektrust.Util.UtilTest" time="0.001"/>
-  <testcase name="validateMessage()" classname="com.geektrust.Util.UtilTest" time="0.0"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

@@ -1,6 +1,6 @@
 package com.geektrust.service;
 
-import com.geektrust.Util.Util;
+import com.geektrust.util.Util;
 import com.geektrust.data.Kingdom;
 import com.geektrust.data.KingdomData;
 
