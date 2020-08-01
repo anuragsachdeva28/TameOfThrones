@@ -1,15 +1,11 @@
 package com.geektrust;
 
 import com.geektrust.data.AlliedKingdom;
-import com.geektrust.data.Kingdom;
-import com.geektrust.data.KingdomData;
 import com.geektrust.service.Alliance;
 import com.geektrust.service.AllianceImpl;
 
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.util.Map;
 import java.util.Scanner;
 
 public class TameOfThronesApplication {

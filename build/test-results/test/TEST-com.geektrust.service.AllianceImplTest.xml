@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.geektrust.service.AllianceImplTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-08-01T06:47:20" hostname="anurag-PC" time="0.349">
+<testsuite name="com.geektrust.service.AllianceImplTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-08-01T19:02:02" hostname="anurag-PC" time="0.018">
   <properties/>
-  <testcase name="checkAlliance()" classname="com.geektrust.service.AllianceImplTest" time="0.349"/>
+  <testcase name="checkAlliance()" classname="com.geektrust.service.AllianceImplTest" time="0.018"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

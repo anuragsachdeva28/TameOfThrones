@@ -1,6 +1,6 @@
 package com.geektrust.service;
 
-import com.geektrust.util.Util;
+import com.geektrust.util.StringUtil;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
@@ -13,15 +13,14 @@ import static org.junit.jupiter.api.Assertions.*;
 @ExtendWith(MockitoExtension.class)
 public class AllianceImplTest {
     @Mock
-    Util mockUtil = new Util();
+    private KingdomManager kingdomManager;
+
     @InjectMocks
-    Alliance mockAlliance = new AllianceImpl();
+    private AllianceImpl mockAlliance;
+
     @Test
     void checkAlliance() {
-        Mockito.when(mockUtil.encryptEmblem("PANDA", 5)).thenReturn("UFSIF");
-        Mockito.when(mockUtil.validateMessage("UFSIF", "FAIJWJSOOFAMAU")).thenReturn(true);
-        boolean actual = mockAlliance.checkAlliance("LAND", "FAIJWJSOOFAMAU");
-
-        assertTrue(actual);
+        Mockito.when(kingdomManager.checkAlliance("AIR", "ROZO")).thenReturn(true);
+        assertTrue(mockAlliance.checkAlliance("AIR", "ROZO"));
     }
 }
