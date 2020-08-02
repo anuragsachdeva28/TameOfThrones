@@ -1,4 +1,4 @@
-package com.geektrust.data;
+package com.geektrust.model;
 
 import lombok.EqualsAndHashCode;
 
@@ -59,14 +59,14 @@ public class Kingdom {
     }
 
     /**
-     * Method to display allies according to the given criteria in the question
+     * Method to get all allies according to the given criteria in the question
      */
-    public void displayAllies() {
+    public String getAllAllies() {
         int numberOfAllies = alliedKingdoms.size();
         String allies = "NONE";
         if (numberOfAllies > 3) {
             allies = String.join(" ", alliedKingdoms);
         }
-        System.out.println(allies);
+        return allies;
     }
 }

@@ -45,16 +45,18 @@ cd TameOfThrones
 
 ./gradlew clean build
 ```
+*Make sure the gradle version is minimum 5.1  <br>
 
 After this go inside build/libs folder and run the following command:
 <br>
 ```
 java -jar geektrust.jar <path to input file>
 ```
+*Sample input files are present in the folder structure <br>
 
 To run test:
 ```
 ./gradlew test
 ```
-### **Authors**
+### **Author**
 Anurag Sachdeva

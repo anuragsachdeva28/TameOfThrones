@@ -1,4 +1,4 @@
-package com.geektrust.data;
+package com.geektrust.model;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -13,12 +13,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class KingdomTest {
 
-    private final ByteArrayOutputStream outContent = new ByteArrayOutputStream();
-    private final ByteArrayOutputStream errContent = new ByteArrayOutputStream();
-    private final PrintStream originalOut = System.out;
-    private final PrintStream originalErr = System.err;
-
-    Kingdom kingdom;
+    private Kingdom kingdom;
 
     @BeforeEach
     void init() {
@@ -47,27 +42,17 @@ class KingdomTest {
 
     @Test
     void displayAlliesWhenAlliesAreMoreThanThree() {
-        System.setOut(new PrintStream(outContent));
-        System.setErr(new PrintStream(errContent));
         kingdom.addAlliedKingdom("SPACE");
         kingdom.addAlliedKingdom("LAND");
         kingdom.addAlliedKingdom("ICE");
         kingdom.addAlliedKingdom("WATER");
-        kingdom.displayAllies();
-        assertEquals("AIR SPACE LAND ICE WATER\n", outContent.toString());
-        System.setOut(originalOut);
-        System.setErr(originalErr);
+        assertEquals("AIR SPACE LAND ICE WATER", kingdom.getAllAllies());
     }
 
     @Test
     void displayAlliesWhenAlliesAreLessThanThree() {
-        System.setOut(new PrintStream(outContent));
-        System.setErr(new PrintStream(errContent));
         kingdom.addAlliedKingdom("SPACE");
         kingdom.addAlliedKingdom("LAND");
-        kingdom.displayAllies();
-        assertEquals("NONE\n", outContent.toString());
-        System.setOut(originalOut);
-        System.setErr(originalErr);
+        assertEquals("NONE", kingdom.getAllAllies());
     }
 }

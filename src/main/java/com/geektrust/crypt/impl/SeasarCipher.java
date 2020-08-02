@@ -1,4 +1,8 @@
-package com.geektrust.crypt;
+package com.geektrust.crypt.impl;
+
+import com.geektrust.crypt.Decryptor;
+import com.geektrust.crypt.Encryptor;
+import lombok.NonNull;
 
 /**
  * Assumption: The SeasarCipher takes 'spaces' differently into consideration while
@@ -19,7 +23,7 @@ public class SeasarCipher implements Decryptor, Encryptor {
      * @return
      */
     @Override
-    public String decrypt(String cipherKey, String message) {
+    public String decrypt(@NonNull String cipherKey, @NonNull String message) {
         StringBuilder decryptedMessage = new StringBuilder();
         for (char c : message.toCharArray()) {
             if ((int) c == SPACE_ASCII_INDEX) {
@@ -46,7 +50,7 @@ public class SeasarCipher implements Decryptor, Encryptor {
      * @return
      */
     @Override
-    public String encrypt(String cipherKey, String message) {
+    public String encrypt(@NonNull String cipherKey, @NonNull String message) {
         StringBuilder encryptedMessage = new StringBuilder();
         for (char c : message.toCharArray()) {
             if ((int) c == SPACE_ASCII_INDEX) {

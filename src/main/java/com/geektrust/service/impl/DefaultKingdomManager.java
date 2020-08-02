@@ -1,10 +1,12 @@
-package com.geektrust.service;
+package com.geektrust.service.impl;
 
 import com.geektrust.crypt.Decryptor;
-import com.geektrust.crypt.SeasarCipher;
-import com.geektrust.data.Kingdom;
-import com.geektrust.data.KingdomFactory;
+import com.geektrust.crypt.impl.SeasarCipher;
+import com.geektrust.model.Kingdom;
+import com.geektrust.factory.KingdomFactory;
+import com.geektrust.service.KingdomManager;
 import com.geektrust.util.StringUtil;
+import lombok.NonNull;
 
 public class DefaultKingdomManager implements KingdomManager {
 
@@ -26,7 +28,7 @@ public class DefaultKingdomManager implements KingdomManager {
      * @return
      */
     @Override
-    public boolean checkAlliance(String kingdomName, String secretMessage) {
+    public boolean checkAlliance(@NonNull String kingdomName, @NonNull String secretMessage) {
         Kingdom kingdom = kingdomFactory.getKingdom(kingdomName);
         String cipherKey = kingdom.getCipherKey();
         String emblem = kingdom.getEmblem();
@@ -40,8 +42,8 @@ public class DefaultKingdomManager implements KingdomManager {
     }
 
     @Override
-    public void displayAllies(String senderKingdom) {
-        kingdomFactory.getKingdom(senderKingdom).displayAllies();
+    public String getAllAllies(String senderKingdom) {
+        return kingdomFactory.getKingdom(senderKingdom).getAllAllies();
     }
 
 

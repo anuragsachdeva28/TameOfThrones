@@ -1,11 +1,9 @@
-
+/build
 ### IntelliJ IDEA ###
 .idea
 *.iws
 *.iml
 *.ipr
-
-/build/
 
 ### VS Code ###
 .vscode/

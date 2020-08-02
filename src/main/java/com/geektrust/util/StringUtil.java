@@ -1,5 +1,10 @@
 package com.geektrust.util;
 
+import lombok.NonNull;
+
+import java.util.HashMap;
+import java.util.Map;
+
 public final class StringUtil {
 
     /**
@@ -9,16 +14,30 @@ public final class StringUtil {
      * @param second
      * @return
      */
-    public static boolean isSubSequence(String first, String second) {
+    public static boolean isSubSequence(@NonNull String first, @NonNull String second) {
 
+        Map<Character, Integer> secondStringFreq;
+        secondStringFreq = calcFreq(second);
         for (char c : first.toCharArray()) {
-            if (second.indexOf(c) == -1) {
+            if (secondStringFreq.containsKey(c)) {
+                if (secondStringFreq.get(c) > 1) {
+                    secondStringFreq.put(c, secondStringFreq.get(c) - 1);
+                } else {
+                    secondStringFreq.remove(c);
+                }
+            } else {
                 return false;
-            } else if (second.indexOf(c) >= 0) {
-                second = second.substring(0, second.indexOf(c)) + second.substring(second.indexOf(c) + 1);
             }
         }
         return true;
+    }
+
+    private static Map<Character, Integer> calcFreq(@NonNull String str) {
+        Map<Character, Integer> freq = new HashMap<>();
+        for (char c : str.toCharArray()) {
+            freq.put(c, freq.getOrDefault(c, 0) + 1);
+        }
+        return freq;
     }
 
 

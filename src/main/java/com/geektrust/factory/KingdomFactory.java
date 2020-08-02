@@ -1,4 +1,6 @@
-package com.geektrust.data;
+package com.geektrust.factory;
+
+import com.geektrust.model.Kingdom;
 
 import java.util.HashMap;
 import java.util.Map;

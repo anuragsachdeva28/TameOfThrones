@@ -1,4 +1,8 @@
-package com.geektrust.service;
+package com.geektrust.service.impl;
+
+import com.geektrust.service.Alliance;
+import com.geektrust.service.KingdomManager;
+import lombok.NonNull;
 
 public class AllianceImpl implements Alliance {
 
@@ -27,13 +31,14 @@ public class AllianceImpl implements Alliance {
     }
 
     @Override
-    public void addAlliance(String senderKingdom, String receiverKingdom) {
+    public void addAlliance(@NonNull String senderKingdom, @NonNull String receiverKingdom) {
         kingdomManager.addAlliance(senderKingdom, receiverKingdom);
     }
 
     @Override
     public void displayAllies(String senderKingdom) {
-        kingdomManager.displayAllies(senderKingdom);
+        String allies = kingdomManager.getAllAllies(senderKingdom);
+        System.out.println(allies);
     }
 
 }

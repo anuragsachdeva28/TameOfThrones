@@ -1,12 +1,16 @@
 package com.geektrust;
 
 import com.geektrust.service.Alliance;
-import com.geektrust.service.AllianceImpl;
+import com.geektrust.service.impl.AllianceImpl;
 
 import java.io.File;
 import java.io.IOException;
 import java.util.Scanner;
 
+/**
+ * Here, the sender kingdom is fixed to SPACE KINGDOM, but
+ * can be changed in case the requirement changes in the future
+ */
 public class TameOfThronesApplication {
     public static void main(String[] args) throws IOException {
 
@@ -23,10 +27,6 @@ public class TameOfThronesApplication {
             String secretMessage = input.substring(input.indexOf(" ") + 1);
 
             if (alliance.checkAlliance(kingdomName, secretMessage)) {
-                /**
-                 * Here, the sender kingdom is fixed to SPACE kingdom, but
-                 * can be changed in case the requirement changes in the future
-                 */
                 alliance.addAlliance("SPACE", kingdomName);
             }
         }

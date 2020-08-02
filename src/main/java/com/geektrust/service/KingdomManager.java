@@ -5,5 +5,5 @@ public interface KingdomManager {
 
     void addAlliance(String senderKingdom, String receiverKingdom);
 
-    void displayAllies(String senderKingdom);
+    String getAllAllies(String senderKingdom);
 }
