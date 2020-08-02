@@ -1,6 +1,5 @@
 package com.geektrust;
 
-import com.geektrust.data.AlliedKingdom;
 import com.geektrust.service.Alliance;
 import com.geektrust.service.AllianceImpl;
 
@@ -12,7 +11,6 @@ public class TameOfThronesApplication {
     public static void main(String[] args) throws IOException {
 
         Alliance alliance = new AllianceImpl();
-        AlliedKingdom alliedKingdom = new AlliedKingdom();
 
 
         File file = new File(args[0]);
@@ -25,10 +23,13 @@ public class TameOfThronesApplication {
             String secretMessage = input.substring(input.indexOf(" ") + 1);
 
             if (alliance.checkAlliance(kingdomName, secretMessage)) {
-                alliedKingdom.addKingdom(kingdomName);
+                /**
+                 * Here, the sender kingdom is fixed to SPACE kingdom, but
+                 * can be changed in case the requirement changes in the future
+                 */
+                alliance.addAlliance("SPACE", kingdomName);
             }
         }
-
-        alliedKingdom.displayAllies();
+        alliance.displayAllies("SPACE");
     }
 }

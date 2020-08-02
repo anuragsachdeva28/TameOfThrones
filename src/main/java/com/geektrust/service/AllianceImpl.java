@@ -25,4 +25,15 @@ public class AllianceImpl implements Alliance {
         return kingdomManager.checkAlliance(kingdomName, secretMessage);
 
     }
+
+    @Override
+    public void addAlliance(String senderKingdom, String receiverKingdom) {
+        kingdomManager.addAlliance(senderKingdom, receiverKingdom);
+    }
+
+    @Override
+    public void displayAllies(String senderKingdom) {
+        kingdomManager.displayAllies(senderKingdom);
+    }
+
 }

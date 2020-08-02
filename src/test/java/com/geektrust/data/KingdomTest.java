@@ -5,55 +5,56 @@ import org.junit.jupiter.api.Test;
 
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
+import java.util.LinkedHashSet;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class AlliedKingdomTest {
+class KingdomTest {
 
     private final ByteArrayOutputStream outContent = new ByteArrayOutputStream();
     private final ByteArrayOutputStream errContent = new ByteArrayOutputStream();
     private final PrintStream originalOut = System.out;
     private final PrintStream originalErr = System.err;
 
-    AlliedKingdom alliedKingdom;
+    Kingdom kingdom;
 
     @BeforeEach
-    public void init() {
-        alliedKingdom = new AlliedKingdom();
+    void init() {
+        kingdom = new Kingdom("AIR", "OWL");
     }
+
 
     @Test
     void checkSingleAddKingdom() {
-        alliedKingdom.addKingdom("AIR");
-        assertEquals(new ArrayList<String>(Collections.singletonList("AIR")), alliedKingdom.getAlliedKingdom());
+        kingdom.addAlliedKingdom("LAND");
+        assertEquals(new LinkedHashSet<>(Arrays.asList("AIR", "LAND")), kingdom.getAlliedKingdoms());
     }
 
     @Test
     void checkNullAddKingdom() {
-        alliedKingdom.addKingdom(null);
-        assertEquals(new ArrayList<String>(), alliedKingdom.getAlliedKingdom());
+        kingdom.addAlliedKingdom(null);
+        assertEquals(new LinkedHashSet<>(Collections.singletonList("AIR")), kingdom.getAlliedKingdoms());
     }
 
     @Test
     void checkMultipleAddKingdom() {
-        alliedKingdom.addKingdom("AIR");
-        alliedKingdom.addKingdom("LAND");
-        assertEquals(new ArrayList<String>(Arrays.asList("AIR", "LAND")), alliedKingdom.getAlliedKingdom());
+        kingdom.addAlliedKingdom("WATER");
+        kingdom.addAlliedKingdom("LAND");
+        assertEquals(new LinkedHashSet<>(Arrays.asList("AIR", "WATER", "LAND")), kingdom.getAlliedKingdoms());
     }
 
     @Test
     void displayAlliesWhenAlliesAreMoreThanThree() {
         System.setOut(new PrintStream(outContent));
         System.setErr(new PrintStream(errContent));
-        alliedKingdom.addKingdom("AIR");
-        alliedKingdom.addKingdom("LAND");
-        alliedKingdom.addKingdom("ICE");
-        alliedKingdom.addKingdom("WATER");
-        alliedKingdom.displayAllies();
-        assertEquals("SPACE AIR LAND ICE WATER\n", outContent.toString());
+        kingdom.addAlliedKingdom("SPACE");
+        kingdom.addAlliedKingdom("LAND");
+        kingdom.addAlliedKingdom("ICE");
+        kingdom.addAlliedKingdom("WATER");
+        kingdom.displayAllies();
+        assertEquals("AIR SPACE LAND ICE WATER\n", outContent.toString());
         System.setOut(originalOut);
         System.setErr(originalErr);
     }
@@ -62,9 +63,9 @@ class AlliedKingdomTest {
     void displayAlliesWhenAlliesAreLessThanThree() {
         System.setOut(new PrintStream(outContent));
         System.setErr(new PrintStream(errContent));
-        alliedKingdom.addKingdom("AIR");
-        alliedKingdom.addKingdom("LAND");
-        alliedKingdom.displayAllies();
+        kingdom.addAlliedKingdom("SPACE");
+        kingdom.addAlliedKingdom("LAND");
+        kingdom.displayAllies();
         assertEquals("NONE\n", outContent.toString());
         System.setOut(originalOut);
         System.setErr(originalErr);

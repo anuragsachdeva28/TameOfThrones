@@ -9,6 +9,7 @@ import java.io.IOException;
 import java.io.PrintStream;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
 class TameOfThronesApplicationTest {
 
@@ -42,5 +43,13 @@ class TameOfThronesApplicationTest {
         String path = "src/test/resources/input.txt";
         TameOfThronesApplication.main(new String[]{path});
         assertEquals("SPACE AIR LAND ICE\n", outContent.toString());
+    }
+
+    @Test
+    public void testForInvalidAlliedRuler() {
+        String path = "src/test/resources/input2.txt";
+        assertThrows(IllegalArgumentException.class, () -> {
+            TameOfThronesApplication.main(new String[]{path});
+        });
     }
 }

@@ -8,7 +8,7 @@ public class KingdomFactory {
 
     private static final Map<String, Kingdom> kingdomMap = new HashMap<>();
 
-    static {
+    public KingdomFactory() {
         kingdomMap.put("SPACE", new Kingdom("SPACE", "GORILLA"));
         kingdomMap.put("LAND", new Kingdom("LAND", "PANDA"));
         kingdomMap.put("WATER", new Kingdom("WATER", "OCTOPUS"));
@@ -19,7 +19,8 @@ public class KingdomFactory {
 
     /**
      * getKingdom method returns the Object of a particular kingdom when the name
-     * of kingdom is provided.
+     * of kingdom is provided. It gives an Illegal argument exception if
+     * an unrecognized kingdom is found
      *
      * @param kingdomName
      * @return
